@@ -5,16 +5,16 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 
 
-const Product = ({product,icon}) => {
-    console.log(icon);
-    const {name,picture,price} = product
+const Product = ({product,addToCart}) => {
+    // console.log(icon);
+    const {name,picture,price,id} = product
     return (
         <div className='product'>
             <img src={picture} alt="" />
             <h1>Name: {name}</h1>
             <p>Price: {price}</p>
             <div>
-                <button>Add To Cart <FontAwesomeIcon icon={ faShoppingCart }/></button>
+                <button onClick={()=>addToCart(product)}>Add To Cart <FontAwesomeIcon icon={ faShoppingCart }/></button>
                 
             </div>
         </div>
