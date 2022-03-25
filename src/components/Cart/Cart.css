@@ -1,0 +1,9 @@
+.cart-info button {
+  display: block;
+  padding: 8px;
+  margin: 5px auto;
+  cursor: pointer;
+}
+.cart-info button:hover {
+  background-color: rgb(55, 189, 189);
+}

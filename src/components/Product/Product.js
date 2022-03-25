@@ -13,9 +13,8 @@ const Product = ({product,addToCart}) => {
             <img src={picture} alt="" />
             <h1>Name: {name}</h1>
             <p>Price: {price}</p>
-            <div>
-                <button onClick={()=>addToCart(product)}>Add To Cart <FontAwesomeIcon icon={ faShoppingCart }/></button>
-                
+            <div className='cart-btn'>
+                <button onClick={()=>addToCart(product)}>Add To Cart <FontAwesomeIcon icon={ faShoppingCart }/></button>               
             </div>
         </div>
     );
