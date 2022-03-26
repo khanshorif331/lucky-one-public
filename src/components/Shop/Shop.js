@@ -12,13 +12,14 @@ const Shop = () => {
         .then(res=>res.json())
         .then(data=>setProducts(data))
     },[])
-    const cartData = []
-    const [cart,setCart] = useState({})
-    console.log(cart);
+    // const cartData = []
+    const [cart,setCart] = useState([])
+    // console.log(cart);
     const addToCart = (product)=>{
-        setCart(product);
-        cartData.push(cart)
-        console.log(cartData);
+        const newCart = [...cart,product]
+        setCart(newCart);
+        // cartData.push(cart)
+        console.log(cart);
     }
     return (
         <div className='shop-container'>
