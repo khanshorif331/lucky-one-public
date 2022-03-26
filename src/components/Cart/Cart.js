@@ -8,12 +8,6 @@ const Cart = ({cart}) => {
 
     let item = cart.map(cartItem=><li>{cartItem.name}</li>)
     const random = Math.floor(Math.random()*cart.length)
-    // const randomGenerator=()=>{
-    //     let random2 = Math.floor(Math.random()*cart.length)
-    // }
-    // setRandomProducts(item[random])
-    // console.log(random);
-    // console.log(cart[random])
     const randomProduct=()=>{
         setRandomProducts(cart[random])
 
