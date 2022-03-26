@@ -7,6 +7,9 @@
   gap: 20px;
   grid-template-columns: repeat(3, 1fr);
 }
+.cart {
+  background-color: red;
+}
 
 @media only screen and (max-width: 600px) {
   .product-container {
@@ -14,6 +17,8 @@
   }
   .cart {
     width: 100%;
+    /* max-width: 600px; */
+    margin: 0 auto;
   }
   .shop-container {
     grid-template-columns: 1fr;

@@ -1,3 +1,8 @@
+.cart-info {
+  padding: 15px;
+  position: sticky;
+  top: 0;
+}
 .cart-info button {
   display: block;
   padding: 8px;

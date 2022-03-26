@@ -7,7 +7,7 @@ import { faShoppingCart } from '@fortawesome/free-solid-svg-icons'
 
 const Product = ({product,addToCart}) => {
     // console.log(icon);
-    const {name,picture,price,id} = product
+    const {name,picture,price} = product
     return (
         <div className='product'>
             <img src={picture} alt="" />
