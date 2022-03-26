@@ -15,12 +15,11 @@ const Cart = ({cart,removeItem}) => {
         setRandomProducts(cart[random])
     }
 
-    // const [removeCart,setRemoveCart] =useState([])
     
     return (
         <div className='cart-info'>
             <h1>Selected :{cart.length}</h1>
-            <p>{item}</p>
+            <div>{item}</div>
             <h1>{cart.name}</h1>
             <button onClick={randomProduct}>Chose 1 For Me</button>
             <p>{randomProducts?.name}</p>

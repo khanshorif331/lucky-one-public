@@ -4,8 +4,8 @@ import './Header.css'
 const Header = () => {
     return (
         <div className='header'>
-            <h1>Welcome </h1>
-            <p>Choose 4 Clothes To Find The Best!!!</p>
+            <h1>Welcome To The Keyboard Store</h1>
+            <p>Choose Any Keyboards To Find The Best!!!</p>
         </div>
     );
 };
