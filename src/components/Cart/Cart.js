@@ -16,13 +16,14 @@ const Cart = ({cart}) => {
     
     // console.log(item.length);
 
-    const [cleanItem,setCleanItem] =useState([])
-    const removeItem = ()=>{
-        item.length=0
-       setCleanItem(item.length=0)
+    const [removeCart,setRemoveCart] =useState([])
+    const removeItem = (cart)=>{
+        console.log(cart=[]);
+        cart=[]
+       setRemoveCart(cart.pop())
     //    console.log(item);
     }
-    console.log(cleanItem);
+    console.log(cart);
     return (
         <div className='cart-info'>
             <h1>Selected :{cart.length}</h1>
@@ -30,7 +31,7 @@ const Cart = ({cart}) => {
             <h1>{cart.name}</h1>
             <button onClick={randomProduct}>Chose 1 For Me</button>
             <p>{randomProducts?.name}</p>
-            <button onClick={removeItem}>Choose Again</button>
+            <button onClick={()=>removeItem(cart)}>Choose Again</button>
         </div>
     );
 };

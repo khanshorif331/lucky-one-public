@@ -1,0 +1,8 @@
+.faq-container {
+  background-color: azure;
+  margin: 0 auto;
+}
+.faq-container h1 {
+  text-align: center;
+  color: rgb(39, 100, 153);
+}
